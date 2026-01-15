@@ -1,11 +1,11 @@
 # LevelDB Implementation Task List
 
-- [ ] Project Initialization and Setup
-- [/] Phase 1: Skip List (Memtable)
-    - [/] Implement Node structure
-    - [/] Implement Skip List insertion/search/deletion
-    - [ ] Add Iterator support
-    - [ ] Unit tests for Skip List
+- [x] Project Initialization and Setup
+- [x] Phase 1: Skip List (Memtable)
+    - [x] Implement Node structure
+    - [x] Implement Skip List insertion/search/deletion
+    - [x] Add Iterator support
+    - [x] Unit tests for Skip List
 - [ ] Phase 2: Write-Ahead Log (WAL)
     - [ ] Define WAL log format
     - [ ] Implement WAL Writer (append-only)
