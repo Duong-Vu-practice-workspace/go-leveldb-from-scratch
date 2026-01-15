@@ -1,0 +1,32 @@
+# LevelDB Implementation Task List
+
+- [ ] Project Initialization and Setup
+- [/] Phase 1: Skip List (Memtable)
+    - [/] Implement Node structure
+    - [/] Implement Skip List insertion/search/deletion
+    - [ ] Add Iterator support
+    - [ ] Unit tests for Skip List
+- [ ] Phase 2: Write-Ahead Log (WAL)
+    - [ ] Define WAL log format
+    - [ ] Implement WAL Writer (append-only)
+    - [ ] Implement WAL Reader (for recovery)
+    - [ ] Verification of WAL persistence
+- [ ] Phase 3: SSTable (Sorted String Table)
+    - [ ] Define SSTable layout (Data Blocks, Index Block, Footer)
+    - [ ] Implement SSTable Builder (flushing Memtable)
+    - [ ] Implement SSTable Reader
+    - [ ] Unit tests for SSTable
+- [ ] Phase 4: Database Core & Read Path
+    - [ ] Implement Manifest/Version management
+    - [ ] Implement `Get`, `Put`, `Delete` logic
+    - [ ] Support for multiple SSTable levels (LSM-tree basics)
+- [ ] Phase 5: Optimizations
+    - [ ] Bloom Filters for fast lookups
+    - [ ] Block Cache
+    - [ ] Table Cache
+- [ ] Phase 6: Compaction
+    - [ ] Minor Compaction (Memtable to L0)
+    - [ ] Major Compaction (Merging SSTables)
+- [ ] Phase 7: Concurrency & Safety
+    - [ ] File locking (Single process safety)
+    - [ ] Mutexes for thread safety
